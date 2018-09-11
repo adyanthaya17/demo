@@ -6,11 +6,11 @@ pipeline {
 #                sh '/home/jenkins/stage1.sh'
 #            }
 #        }
-        stage('Operating system is about to be installed') {
-            steps {
-                sh '/home/jenkins/stage2.sh'
-            }
-        }
+#        stage('Operating system is about to be installed') {
+#            steps {
+#                sh '/home/jenkins/stage2.sh'
+#            }
+#        }
         stage('Checking if IP has been assigned') {
             steps {
                 sh '/home/jenkins/stage3.sh'
