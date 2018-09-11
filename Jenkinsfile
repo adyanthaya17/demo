@@ -1,16 +1,5 @@
 pipeline {
     agent {label 'centosforeman'}
-#    stages {
-#        stage('Create a host of Centos server 7') {
-#            steps {
-#                sh '/home/jenkins/stage1.sh'
-#            }
-#        }
-#        stage('Operating system is about to be installed') {
-#            steps {
-#                sh '/home/jenkins/stage2.sh'
-#            }
-#        }
         stage('Checking if IP has been assigned') {
             steps {
                 sh '/home/jenkins/stage3.sh'
@@ -21,5 +10,4 @@ pipeline {
                 sh '/home/jenkins/stage4.sh'
             }
         }
-    }
 }
