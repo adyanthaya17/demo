@@ -1,11 +1,10 @@
-pipeline {
-    agent {label 'centosforeman'}
+}pipeline {
+    agent { label 'centosforeman'} 
     stages {
-        stage('Checking if IP has been assigned') {
+        stage('Deploy') { 
             steps {
-                sh 'test.sh '
+                sh 'test.sh'
             }
         }
-      }
     }
-}
+} 
