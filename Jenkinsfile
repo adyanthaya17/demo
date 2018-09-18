@@ -3,13 +3,9 @@ pipeline {
     stages {
         stage('Checking if IP has been assigned') {
             steps {
-                sh ' cd /home/jenkins/ && ./stage3.sh'
+                sh 'test.sh '
             }
         }
-        stage('Check if machine is ready') {
-            steps {
-                sh '/home/jenkins/stage4.sh'
-            }
-        }
+      }
     }
 }
